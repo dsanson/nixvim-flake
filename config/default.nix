@@ -5,19 +5,20 @@
   imports = [ 
     ./plugins/auto-save.nix
     ./plugins/cmp.nix
-    ./plugins/copilot-chat.nix
+    #./plugins/copilot-chat.nix
     ./plugins/commentary.nix
     ./plugins/treesitter.nix
     ./plugins/which-key.nix
     ./plugins/twilight.nix
     ./plugins/lastplace.nix
-    ./plugins/oil.nix
+     #./plugins/oil.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/image.nix
     ./plugins/surround.nix
+    ./plugins/rainbow-delimiters.nix
     ./plugins/zen-mode.nix
-    ./plugins/vimtex.nix
+    #./plugins/vimtex.nix
     ./plugins/otter.nix
     ./plugins/telescope.nix
     ./plugins/todo-comments.nix
@@ -37,8 +38,7 @@
     vim-speeddating
     utl-vim
     csv-vim
-    vim-fish
-    popup-nvim
+    #popup-nvim
     boole-nvim
     (pkgs.vimUtils.buildVimPlugin {
      name = "neopywal";
