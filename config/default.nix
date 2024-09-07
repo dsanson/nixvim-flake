@@ -71,8 +71,7 @@
   # colorscheme 
   opts.background = "dark"; # neopywal manages light and dark on its own
   colorscheme = "neopywal";
-
-
+}
 
 
 # Not available as nixvim plugins and haven't bothered to install manually yet
