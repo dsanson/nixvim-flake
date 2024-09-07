@@ -1,0 +1,6 @@
+{
+  plugins.twilight = {
+    enable = true;
+  };
+}
+

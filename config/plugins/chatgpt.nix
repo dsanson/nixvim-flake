@@ -1,0 +1,5 @@
+{
+  plugins.chatgpt = {
+    enable = true;
+  };
+}
