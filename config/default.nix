@@ -1,24 +1,25 @@
-{ pkgs, ...} :
-
+{ pkgs, ...}:
 {
   # Import all your configuration modules here
   imports = [ 
+    ./options.nix
+    ./abbreviations.nix
+    ./digraphs.nix
+    ./mappings.nix
+
     ./plugins/auto-save.nix
     ./plugins/cmp.nix
-    #./plugins/copilot-chat.nix
     ./plugins/commentary.nix
     ./plugins/treesitter.nix
     ./plugins/which-key.nix
     ./plugins/twilight.nix
     ./plugins/lastplace.nix
-     #./plugins/oil.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/image.nix
     ./plugins/surround.nix
     ./plugins/rainbow-delimiters.nix
     ./plugins/zen-mode.nix
-    #./plugins/vimtex.nix
     ./plugins/otter.nix
     ./plugins/telescope.nix
     ./plugins/todo-comments.nix
@@ -27,18 +28,15 @@
     ./plugins/lsp.nix
     ./plugins/easy-align.nix
     ./plugins/markdown-oxide.nix
+    ./plugins/vale-ls.nix
     ./plugins/pandoc.nix
-    ./options.nix
-    ./abbreviations.nix
-    ./digraphs.nix
-    ./mappings.nix
+
   ];
 
   extraPlugins = with pkgs.vimPlugins; [
     vim-speeddating
     utl-vim
     csv-vim
-    #popup-nvim
     boole-nvim
     (pkgs.vimUtils.buildVimPlugin {
      name = "neopywal";
@@ -49,32 +47,30 @@
      hash = "sha256-P28gg5fPPPyhepPHOZFgMnGTToCXK+v4ev6oTRSZXtg=";
      };
     })
-    
   ];
-
-  # extraConfigLua = ''
-  #   local capabilities = vim.lsp.protocol.make_client_capabilities()
-  #
-  #   require('lspconfig').marksman.setup({
-  #     on_attach = _M.lspOnAttach,
-  #     capabilities = vim.tbl_deep_extend( 'force', capabilities or {}, { workspace = { didChangeWatchedFiles = { dynamicRegistration = true, }, }, })
-  #   })
-  # '';
-
 
   extraPackages = with pkgs; [
     manix # should just install this globally
   ];
-
 
   # colorscheme 
   opts.background = "dark"; # neopywal manages light and dark on its own
   colorscheme = "neopywal";
 
   performance.byteCompileLua.enable = true;
-
 }
 
+
+# See ./markdown-oxide.nix instead
+#
+# extraConfigLua = ''
+#   local capabilities = vim.lsp.protocol.make_client_capabilities()
+#
+#   require('lspconfig').marksman.setup({
+#     on_attach = _M.lspOnAttach,
+#     capabilities = vim.tbl_deep_extend( 'force', capabilities or {}, { workspace = { didChangeWatchedFiles = { dynamicRegistration = true, }, }, })
+#   })
+# '';
 
 # Not available as nixvim plugins and haven't bothered to install manually yet
 #   'opdavies/toggle-checkbox.nvim',
@@ -103,7 +99,3 @@
 #         'RainbowMultiDelim'
 #     }
 #   },
-
-
-
-
