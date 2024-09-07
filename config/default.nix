@@ -38,7 +38,6 @@
     utl-vim
     csv-vim
     vim-fish
-    vim-gutentags
     popup-nvim
     boole-nvim
     (pkgs.vimUtils.buildVimPlugin {
@@ -50,7 +49,7 @@
      hash = "sha256-P28gg5fPPPyhepPHOZFgMnGTToCXK+v4ev6oTRSZXtg=";
      };
     })
-
+    
   ];
 
   # extraConfigLua = ''
@@ -71,6 +70,9 @@
   # colorscheme 
   opts.background = "dark"; # neopywal manages light and dark on its own
   colorscheme = "neopywal";
+
+  performance.byteCompileLua.enable = true;
+
 }
 
 
