@@ -30,6 +30,7 @@
     ./plugins/markdown-oxide.nix
     ./plugins/vale-ls.nix
     ./plugins/pandoc.nix
+    ./plugins/copilot.nix
 
   ];
 
