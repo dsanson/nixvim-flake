@@ -28,7 +28,8 @@
     ./plugins/lsp.nix
     ./plugins/easy-align.nix
     ./plugins/markdown-oxide.nix
-    ./plugins/vale-ls.nix
+    #./plugins/vale-ls.nix
+    ./plugins/csv.nix
     ./plugins/pandoc.nix
     ./plugins/copilot.nix
 
