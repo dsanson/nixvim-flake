@@ -5,7 +5,7 @@
     updatetime = 100; # Faster completion
 
     number = true;
-    relativenumber = true;
+    relativenumber = false;
     splitbelow = true;
     splitright = true;
     linespace = 0;    # No extra spaces between rows

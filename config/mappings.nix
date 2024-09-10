@@ -13,12 +13,13 @@
 
   extraConfigLua = ''
     -- movement based on visual lines
-    vim.keymap.set('n', 'j', 'gj')
-    vim.keymap.set('n', 'k', 'gk')
-    vim.keymap.set('v', 'j', 'gj')
-    vim.keymap.set('v', 'k', 'gk')
+    vim.keymap.set({'n', 'v'}, 'j', 'gj')
+    vim.keymap.set({'n', 'v'}, 'k', 'gk')
     vim.keymap.set('n', '<Down>', 'gj')
     vim.keymap.set('n', '<Up>',   'gk')
+    -- jump further up and down
+    vim.keymap.set({'n','v'}, '<C-j>', '5gj')
+    vim.keymap.set({'n','v'}, '<C-k>', '5gk')
     -- visual shifting without exiting visual mode
     vim.keymap.set('v', '<', '<gv', { desc = "shift left" })
     vim.keymap.set('v', '>', '>gv', { desc = "shift right" })
