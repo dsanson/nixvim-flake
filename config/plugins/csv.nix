@@ -12,6 +12,7 @@
      };
     })
   ];
+
   extraConfigLua = ''
     require('csvview').setup(
       {
@@ -26,4 +27,10 @@
       }
     )
   ''; 
+
+  # extraFiles = {
+  #   "after/ftplugin/csv.lua".text = ''
+  #       require('csvview').enable()
+  #   '';
+  # };
 }
