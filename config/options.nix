@@ -55,7 +55,9 @@
     scrolljump    = 5;        # Line to scroll when cursor leaves screen
     scrolloff     = 3;    # Minumum lines to keep above and below cursor
 
+    spell = true;
   };
+
 }
 
 # neovim terminal 
