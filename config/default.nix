@@ -33,6 +33,7 @@
     ./plugins/pandoc.nix
     ./plugins/copilot.nix
     ./plugins/oil.nix
+    ./plugins/mini.nix
 
   ];
 
