@@ -32,6 +32,7 @@
     ./plugins/csv.nix
     ./plugins/pandoc.nix
     ./plugins/copilot.nix
+    ./plugins/oil.nix
 
   ];
 
@@ -50,6 +51,15 @@
      };
     })
   ];
+
+  extraConfigLua = ''
+    require('boole').setup({
+      mappings = {
+        increment = '<C-a>',
+        decrement = '<C-x>'
+      },
+    })
+  '';
 
   extraPackages = with pkgs; [
     manix # should just install this globally
