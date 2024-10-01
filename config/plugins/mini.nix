@@ -3,7 +3,7 @@
     enable = true;
     modules = {
       icons = {};
-      mockDevIcons = {};
     };
+    mockDevIcons = true;
   };
 }
