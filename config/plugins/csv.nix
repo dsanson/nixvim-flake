@@ -28,9 +28,9 @@
     )
   ''; 
 
-  # extraFiles = {
-  #   "after/ftplugin/csv.lua".text = ''
-  #       require('csvview').enable()
-  #   '';
-  # };
+  extraFiles = {
+    "after/ftplugin/csv.lua".text = ''
+        require('csvview').enable()
+    '';
+  };
 }
