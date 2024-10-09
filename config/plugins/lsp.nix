@@ -26,9 +26,9 @@
       ltex = {
         enable = true;
         filetypes = [ "markdown" "tex" "plaintext" "rst" ];
-        extraOptions = {
+        settings = {
+          language = "en-US";
           disabledRules = {
-           "en"    = [ "MORFOLOGIK_RULE_EN" "WHITESPACE_RULE" ];
            "en-US" = [ "MORFOLOGIK_RULE_EN_US" "WHITESPACE_RULE" ];
           };
         };
@@ -54,6 +54,20 @@
 # lsp.vimls.setup {
 #   capabilities = capabilities
 # }
+
+
+# local words = {}
+# for word in io.open(vim.fn.stdpath("config") .. "/spell/en.utf-8.add", "r"):lines() do
+# 	table.insert(words, word)
+# end
+
+# settings = {
+#     ltex = {
+#         dictionary = {
+#             ["en-US"] = words,
+#         },
+#     },
+# },
 
 
 # lsp.ltex.setup{
