@@ -37,7 +37,6 @@
       };
     };
 
-
     keymaps.lspBuf = {
       "gd" = "definition";
       "gr" = "references";
@@ -48,6 +47,16 @@
 
   };
 
+  plugins.ltex-extra = {
+    enable = true;
+    settings = {
+      initCheck = true;
+      loadLangs = [
+        "en-US"
+      ];
+      path = ".ltex";
+    };
+  };
 }
 
 # lsp.dotls.setup {
