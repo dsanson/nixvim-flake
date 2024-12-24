@@ -16,7 +16,6 @@
     ./plugins/lastplace.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
-    ./plugins/image.nix
     ./plugins/surround.nix
     ./plugins/rainbow-delimiters.nix
     ./plugins/zen-mode.nix
@@ -28,10 +27,8 @@
     ./plugins/lsp.nix
     ./plugins/easy-align.nix
     ./plugins/markdown-oxide.nix
-    #./plugins/vale-ls.nix
     ./plugins/csv.nix
     ./plugins/pandoc.nix
-    ./plugins/copilot.nix
     ./plugins/oil.nix
     ./plugins/mini.nix
 

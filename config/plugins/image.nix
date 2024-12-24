@@ -1,5 +1,5 @@
 {
   plugins.image = {
-    enable = true;
+    enable = false;
   };
 }
