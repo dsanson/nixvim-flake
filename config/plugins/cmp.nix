@@ -75,13 +75,20 @@
     (pkgs.vimUtils.buildVimPlugin {
       name = "pandoc_cmp";
       src = pkgs.fetchFromGitHub {
-      owner = "dsanson";
-      repo = "cmp-pandoc.nvim";
-      rev = "14695d4ec9519d4d21a1002f4c1da2b2d2f3e99b";
-      hash = "sha256-izjUzCy1lBmypFjcy0V3mrQJyaWmK35moTBgPYqnsTE=";
+        owner = "dsanson";
+        repo = "cmp-pandoc.nvim";
+        rev = "14695d4ec9519d4d21a1002f4c1da2b2d2f3e99b";
+        hash = "sha256-izjUzCy1lBmypFjcy0V3mrQJyaWmK35moTBgPYqnsTE=";
       };
+      doCheck = false;
     })
   ];
+  
+  # pandoc_cmp = super.pandoc_cmp.overrideAttrs {
+  #   doCheck = false;
+  # };
+
+
 
   extraConfigLua = ''
      require('cmp_pandoc').setup({
@@ -97,7 +104,6 @@
     local cmp_config = cmp.get_config()
     table.insert(cmp_config.sources, { name = 'cmp_pandoc' })
     cmp.setup(cmp_config)
-    
   '';
 
 }

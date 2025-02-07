@@ -42,13 +42,17 @@
     (pkgs.vimUtils.buildVimPlugin {
      name = "neopywal";
      src = pkgs.fetchFromGitHub {
-     owner = "RedsXDD";
-     repo = "neopywal.nvim";
-     rev = "2d65d138463bbbe9d824b9bc1048ef1888017da6";
-     hash = "sha256-P28gg5fPPPyhepPHOZFgMnGTToCXK+v4ev6oTRSZXtg=";
+       owner = "RedsXDD";
+       repo = "neopywal.nvim";
+       rev = "2d65d138463bbbe9d824b9bc1048ef1888017da6";
+       hash = "sha256-P28gg5fPPPyhepPHOZFgMnGTToCXK+v4ev6oTRSZXtg=";
      };
+     doCheck = false;  
     })
   ];
+
+
+
 
   extraConfigLua = ''
     require('boole').setup({
@@ -68,8 +72,8 @@
   colorscheme = "neopywal";
 
   performance.byteCompileLua.enable = true;
-}
 
+}
 
 # See ./markdown-oxide.nix instead
 #
