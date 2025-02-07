@@ -31,6 +31,7 @@
     ./plugins/pandoc.nix
     ./plugins/oil.nix
     ./plugins/mini.nix
+    ./plugins/render-markdown.nix
 
   ];
 
