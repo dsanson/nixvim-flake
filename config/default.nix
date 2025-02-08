@@ -32,6 +32,7 @@
     ./plugins/oil.nix
     ./plugins/mini.nix
     ./plugins/render-markdown.nix
+    ./plugins/image.nix
 
   ];
 
@@ -40,6 +41,7 @@
     utl-vim
     csv-vim
     boole-nvim
+    img-clip-nvim
     (pkgs.vimUtils.buildVimPlugin {
      name = "neopywal";
      src = pkgs.fetchFromGitHub {
