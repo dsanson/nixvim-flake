@@ -33,6 +33,7 @@
     ./plugins/mini.nix
     ./plugins/render-markdown.nix
     ./plugins/image.nix
+    ./plugins/quarto.nix
 
   ];
 
