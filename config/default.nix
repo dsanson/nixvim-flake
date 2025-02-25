@@ -53,17 +53,6 @@
      };
      doCheck = false;  
     })
-    (pkgs.vimUtils.buildVimPlugin {
-     name = "footnote";
-     src = pkgs.fetchFromGitHub {
-       owner = "chenxin-yan";
-       repo = "footnote.nvim";
-       rev = "6c55895a90e366dca38f6041775f14cb85bce773";
-       hash = "sha256-2kQ18DWkrTcEwSEHbDRHMhEnsxIQKOZtN3U5YYsxYcg=";
-     };
-     doCheck = false;  
-    })
-
   ];
 
 
@@ -76,7 +65,6 @@
         decrement = '<C-x>'
       },
     })
-    require('footnote').setup()
   '';
 
   extraPackages = with pkgs; [
@@ -93,15 +81,6 @@
 
 # See ./markdown-oxide.nix instead
 #
-# extraConfigLua = ''
-#   local capabilities = vim.lsp.protocol.make_client_capabilities()
-#
-#   require('lspconfig').marksman.setup({
-#     on_attach = _M.lspOnAttach,
-#     capabilities = vim.tbl_deep_extend( 'force', capabilities or {}, { workspace = { didChangeWatchedFiles = { dynamicRegistration = true, }, }, })
-#   })
-# '';
-
 # Not available as nixvim plugins and haven't bothered to install manually yet
 #   'opdavies/toggle-checkbox.nvim',
 #   { 
