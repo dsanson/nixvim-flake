@@ -53,6 +53,17 @@
      };
      doCheck = false;  
     })
+    (pkgs.vimUtils.buildVimPlugin {
+     name = "footnote";
+     src = pkgs.fetchFromGitHub {
+       owner = "chenxin-yan";
+       repo = "footnote.nvim";
+       rev = "6c55895a90e366dca38f6041775f14cb85bce773";
+       hash = "sha256-2kQ18DWkrTcEwSEHbDRHMhEnsxIQKOZtN3U5YYsxYcg=";
+     };
+     doCheck = false;  
+    })
+
   ];
 
 
@@ -65,6 +76,7 @@
         decrement = '<C-x>'
       },
     })
+    require('footnote').setup()
   '';
 
   extraPackages = with pkgs; [
