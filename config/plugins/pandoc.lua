@@ -1,18 +1,14 @@
 local opt_local = vim.opt_local
 
-opt_local.equalprg = 'pandoc -f markdown+wikilinks_title_after_pipe -t markdown+wikilinks_title_after_pipe  --columns 78 --markdown-headings=atx --id-prefix (random) --reference-location block --standalone'
+opt_local.equalprg = 'pandoc -f markdown+wikilinks_title_after_pipe -t markdown+wikilinks_title_after_pipe  --columns 78 --markdown-headings=atx --reference-location block --standalone'
 opt_local.formatprg = 'semantic_linebreaks'
 opt_local.joinspaces = false
 opt_local.linebreak = true
 opt_local.smartindent = false
--- opt_local.commentstring = '<!--%s-->'
--- opt_local.comments = 's:<!--,m:\ \ \ \ ,e:-->,:\|,n:>'
 opt_local.wrap = true
---opt_local.formatoptions = 'tnroq'
---vim.opt_local.formatlistpat = [[^\s*\([*+-]\|\((*\d\+[.)]\+\)\|\((*\l[.)]\+\)\)\s\+]]
 
 -- vim-pandoc
-vim.g["pandoc#biblio#bibs"] = { "/Users/desanso/Documents/d/research/zotero.bib" }
+-- vim.g["pandoc#biblio#bibs"] = { "/Users/desanso/Documents/d/research/zotero.bib" }
 
 function add_ms_comment()
   math.randomseed(os.time())
@@ -49,8 +45,6 @@ function add_ms_comment()
 end
 
 vim.keymap.set("v", "<leader>iw", function() add_ms_comment() end, {desc = "add Word comment"})
-
--- vim.keymap.set("n", "<leader>tx", require('toggle-checkbox').toggle, {desc = 'Toggle checkbox'})
 
 -- refresh codelens on TextChanged and InsertLeave as well
 vim.api.nvim_create_autocmd({ 'TextChanged', 'InsertLeave', 'CursorHold', 'LspAttach' }, {
