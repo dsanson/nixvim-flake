@@ -80,17 +80,3 @@
 #     },
 # },
 
-
-# lsp.ltex.setup{
-#   on_attach = on_attach,
-#   autostart = true,
-#   filetypes = { 'markdown', 'tex', 'plaintex', 'rst'  },
-#   settings = {
-#     ltex = {
-#       disabledRules = {
-#         ["en"]    = { "MORFOLOGIK_RULE_EN", "WHITESPACE_RULE" },
-#         ["en-US"] = { "MORFOLOGIK_RULE_EN_US", "WHITESPACE_RULE" },
-#       },
-#     },
-#   },
-# }
