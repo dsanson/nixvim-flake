@@ -7,8 +7,8 @@
      src = pkgs.fetchFromGitHub {
        owner = "hat0uma";
        repo = "csvview.nvim";
-       rev = "ba1d6204a3303555377bc389cbd1c35420c28220";
-       hash = "sha256-D2qguDNEyuUP1eA75Ic+s5JiSYXyLRb3ic60a9CgaW4=";
+       rev = "9cc5dcb060c96517d8c34b74e5b81d58529b3ea2";
+       hash = "sha256-0jiPBmUQ3/irNUiZw3s9awlEH+p+oWy5fyyUP3yCrd4=";
      };
     })
   ];
