@@ -11,28 +11,37 @@
     Wq.command = "wq";
   };
 
+  keymaps = [
+    # movement based on visual lines
+    { key = "j"      ; action = "gj"; mode = [ "n" "v" ]; }
+    { key = "<Down>" ; action = "gj"; mode = [ "n" "v" ]; }
+    { key = "k"      ; action = "gk"; mode = [ "n" "v" ]; }
+    { key = "<Up>"   ; action = "gk"; mode = [ "n" "v" ]; }
+
+    # shift in visual mode without exiting visual mode
+    { key = "<"      ; action = "<gv"; mode = [ "v" ]; }
+    { key = "<"      ; action = ">gv"; mode = [ "v" ]; }
+
+    # gf creates new file if none exists
+    { key = "gf"     ; action = "<cmd>e <cword><cr>"; mode = [ "n" ]; }
+
+    # ESC removes highlights from search terms
+    { 
+      key = "<Esc>";
+      action = "<Esc><cmd>noh<CR><Esc>"; 
+      mode = [ "n" "i" "v" ]; 
+      options.silent = true;
+    }
+
+    # maps for opening main notes file
+    { key = "gn";         action = "<cmd>edit ~/d/zettel/Home.md<cr>"; mode = ["n"]; options.desc = "open notes"; }
+    { key = "<leader>jn"; action = "<cmd>edit ~/d/zettel/Home.md<cr>"; mode = ["n"]; options.desc = "open notes"; }
+
+  ];
+
   extraConfigLua = ''
-    -- movement based on visual lines
-    vim.keymap.set({'n', 'v'}, 'j', 'gj')
-    vim.keymap.set({'n', 'v'}, 'k', 'gk')
-    vim.keymap.set('n', '<Down>', 'gj')
-    vim.keymap.set('n', '<Up>',   'gk')
-    -- jump further up and down
-    vim.keymap.set({'n','v'}, '<C-j>', '5gj')
-    vim.keymap.set({'n','v'}, '<C-k>', '5gk')
-    -- visual shifting without exiting visual mode
-    vim.keymap.set('v', '<', '<gv', { desc = "shift left" })
-    vim.keymap.set('v', '>', '>gv', { desc = "shift right" })
-    -- Remap Y to yank to end of line (so consistent with C and D)
-    vim.keymap.set('n', 'Y', 'y$' )
 
-    vim.keymap.set({'n', 'i', 'v'}, '<Esc>', '<Esc>:noh<CR><Esc>', { silent = true }) -- ESC to remove search highlights
     vim.cmd('hi clear VertSplit') -- clear highlighting on split
-
-
-    -- Open main notes file
-    vim.keymap.set('n', 'gn', '<cmd>edit ~/d/zettel/Home.md<cr>', { desc = "open notes" } )
-    vim.keymap.set('n', '<leader>jn', '<cmd>edit ~/d/zettel/Home.md<cr>', { desc = "open notes" } )
 
     local wk = require('which-key')
 
