@@ -221,7 +221,6 @@
     ia <buffer> stnad stand
     ia <buffer> stpo stop
     ia <buffer> syas says
-    ia <buffer> ta at
     ia <buffer> tahn than
     ia <buffer> taht that
     ia <buffer> tath that
