@@ -11,11 +11,6 @@
       fzf-native.enable = true;
 
       media-files.enable = true;
-      media-files.dependencies = {
-        epub-thumbnailer.enable = true;
-        ffmpegthumbnailer.enable = true;
-        pdftoppm.enable = true;
-      };
 
       ui-select.enable = true;
 
@@ -48,6 +43,12 @@
           hash = "sha256-29nSqK4sWI3m5hHviGBfiSN/GPh8oXGiYrrTmN2okRk=";
       };
   })];
+
+  dependencies = {
+    epub-thumbnailer.enable = true;
+    ffmpegthumbnailer.enable = true;
+    poppler-utils.enable = true;
+  };
 
 }
 
