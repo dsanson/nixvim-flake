@@ -23,7 +23,7 @@
     { key = "<"      ; action = ">gv"; mode = [ "v" ]; }
 
     # gf creates new file if none exists
-    { key = "gf"     ; action = "<cmd>e <cword><cr>"; mode = [ "n" ]; }
+    { key = "gf"     ; action = "<cmd>e <cfile><cr>"; mode = [ "n" ]; }
 
     # ESC removes highlights from search terms
     { 
