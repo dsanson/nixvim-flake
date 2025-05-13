@@ -3,6 +3,7 @@
 
   imports = [ 
     ./plugins/treesitter.nix
+    ./plugins/treesitter-context.nix
     ./plugins/cmp.nix
     ./plugins/lsp.nix
     ./plugins/which-key.nix
