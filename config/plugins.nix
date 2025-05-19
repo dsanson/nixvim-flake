@@ -32,6 +32,7 @@
     ./plugins/zen-mode.nix
     ./plugins/twilight.nix
     ./plugins/image.nix
+    ./plugins/neogit.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/telescope.nix
