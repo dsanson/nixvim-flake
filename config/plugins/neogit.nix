@@ -10,7 +10,7 @@
     };
   };
   keymaps = [
-    { key = "<leader>gc"; action = "<cmd>NeogitCommit<cr>"; mode = ["n"]; options.desc = "git commit"; }
+    { key = "<leader>gc"; action = "<cmd>Neogit commit<cr>"; mode = ["n"]; options.desc = "Neogit commit"; }
     { key = "<leader>gg"; action = "<cmd>Neogit<cr>"; mode = ["n"]; options.desc = "Neogit"; }
   ];
 }
