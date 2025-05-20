@@ -21,6 +21,7 @@
     ./plugins/render-markdown.nix
     ./plugins/quarto.nix
     ./plugins/markdown-oxide.nix
+    ./plugins/obsidian.nix
     
     ./plugins/mini.nix
     # replace with mini?
