@@ -4,8 +4,8 @@
     settings = {
       workspaces = [
         {
-          name = "zettel";
-          path = "~/d/zettel";
+          name = "notes";
+          path = "~/notes";
         }
       ];
       daily_notes = {
