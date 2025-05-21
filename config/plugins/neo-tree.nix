@@ -14,32 +14,22 @@
       "document_symbols"
     ];
   };
+  
+  keymaps = [
+    { key = "<leader>tt";
+      action = "<cmd>Neotree document_symbols toggle<cr>";
+      mode = ["n"]; 
+      options.desc = "Table of Contents"; 
+    }
+    { key = "<leader>tf";
+      action = "<cmd>Neotree filesystem toggle<cr>";
+      mode = ["n"]; 
+      options.desc = "Files panel"; 
+    }
+    { key = "<leader>tb";
+      action = "<cmd>Neotree buffers toggle<cr>";
+      mode = ["n"]; 
+      options.desc = "Buffers panel"; 
+    }
+  ];
 }
-
-#     require("neo-tree").setup {
-#      document_symbols = {
-#        follow_cursor = true,
-#        renderers = {
-#          root = {
-#            {"indent"},
-#            {"icon", default="" },
-#            -- {"name", zindex = 0},
-#          },
-#          symbol = {
-#            {"indent", with_expanders = true},
-#            {"kind_icon", default="" },
-#            {"container",
-#            content = {
-#              {"name", zindex = 10},
-#              -- {"kind_name", zindex = 20, align = "right"},
-#              }
-#            }
-#          },
-#        },
-#        kinds = {
-#          String = { icon = "", hl = "" }
-#        },
-#      },
-#     }
-#     end
-#   }

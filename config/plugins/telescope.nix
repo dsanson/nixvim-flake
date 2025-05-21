@@ -50,44 +50,80 @@
     poppler-utils.enable = true;
   };
 
-}
+  keymaps = [
+    { key = "<leader><leader>";
+      action = "<cmd>Telescope commands<cr>";
+      mode = ["n"]; 
+      options.desc = "Run command"; 
+    }
+    { key = "<leader>ff";
+      action = "<cmd>Telescope find_files hidden=true no_ignore=true<cr>";
+      mode = ["n"]; 
+      options.desc = "Find"; 
+    }
+    { key = "<leader>fg";
+      action = "<cmd>Telescope live_grep<cr>";
+      mode = ["n"]; 
+      options.desc = "Grep"; 
+    }
+    { key = "<leader>fr";
+      action = "<cmd>Telescope oldfiles<cr>";
+      mode = ["n"]; 
+      options.desc = "Recent"; 
+    }
+    { key = "<leader>fb";
+      action = "<cmd>Telescope buffers<cr>";
+      mode = ["n"]; 
+      options.desc = "Buffers"; 
+    }
+    { key = "<leader>fz";
+      action = "<cmd>Telescope zoxide list<cr>";
+      mode = ["n"]; 
+      options.desc = "Zoxide"; 
+    }
+    { key = "<leader>bb";
+      action = "<cmd>Telescope buffers theme=dropdown<cr>";
+      mode = ["n"]; 
+      options.desc = "Buffers"; 
+    }
+    { key = "<leader>jh";
+      action = "<cmd>Telescope heading<cr>";
+      mode = ["n"]; 
+      options.desc = "to heading"; 
+    }
+    { key = "<leader>jm";
+      action = "<cmd>Telescope marks<cr>";
+      mode = ["n"]; 
+      options.desc = "to mark"; 
+    }
+    { key = "<leader>jd";
+      action = "<cmd>Telescope lsp_definitions<cr>";
+      mode = ["n"]; 
+      options.desc = "to definition"; 
+    }
+    { key = "<leader>jr";
+      action = "<cmd>Telescope lsp_references<cr>";
+      mode = ["n"]; 
+      options.desc = "to reference"; 
+    }
+    # help mappings
+    { key = "<leader>hm";
+      action = "<cmd>Telescope man_pages<cr>";
+      mode = ["n"]; 
+      options.desc = "man"; 
+    }
+    { key = "<leader>hh";
+      action = "<cmd>Telescope help_tags<cr>";
+      mode = ["n"]; 
+      options.desc = "help"; 
+    }
+    # insert symbols
+    { key = "<leader>is";
+      action = "<cmd>Telescope symbols<cr>";
+      mode = ["n"]; 
+      options.desc = "symbol"; 
+    }
+  ];
 
-  # { 
-  #   "nvim-telescope/telescope-bibtex.nvim",
-  #   dependencies = {'nvim-telescope/telescope.nvim'},
-  #   config = function ()
-  #     require"telescope".setup {
-  #       extensions = {
-  #         bibtex = {
-  #           -- Depth for the *.bib file
-  #           depth = 1,
-  #           -- Custom format for citation label
-  #           custom_formats = {},
-  #           -- Format to use for citation label.
-  #           -- Try to match the filetype by default, or use 'plain'
-  #           format = '',
-  #           -- Path to global bibliographies (placed outside of the project)
-  #           global_files = {'/Users/desanso/Documents/d/research/zotero.bib'},
-  #           -- Define the search keys to use in the picker
-  #           search_keys = { 'author', 'year', 'title' },
-  #           -- Template for the formatted citation
-  #           citation_format = '{{author}} ({{year}}), {{title}}.',
-  #           -- Only use initials for the authors first name
-  #           citation_trim_firstname = true,
-  #           -- Max number of authors to write in the formatted citation
-  #           -- following authors will be replaced by "et al."
-  #           citation_max_auth = 2,
-  #           -- Context awareness disabled by default
-  #           context = false,
-  #           -- Fallback to global/directory .bib files if context not found
-  #           -- This setting has no effect if context = false
-  #           context_fallback = true,
-  #           -- Wrapping in the preview window is disabled by default
-  #           wrap = false,
-  #         },
-  #       }
-  #     }
-  #     require"telescope".load_extension("bibtex")
-  #   end,
-  # }
+}
 
