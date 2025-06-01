@@ -1,3 +1,4 @@
+{ pkgs, ...}:
 {
   plugins.obsidian = {
     enable = true;
@@ -11,6 +12,19 @@
       daily_notes = {
         folder = "daily";
         workdays_only = false;
+      };
+      attachments = {
+        confirm_img_paste = true;
+        img_folder = "attachments";
+        img_text_func = ''
+          function(client, path)
+            ---@type string
+            local link_path
+            link_path = tostring(path)
+            local display_name = vim.fs.basename(link_path)
+            return string.format("![%s](%s)", display_name, link_path)
+          end
+        '';
       };
       note_id_func = ''
         function(title)
@@ -93,4 +107,9 @@
       options.desc = "jump to note matching cword";
     } 
   ];
+
+  extraPackages = with pkgs; [
+    pngpaste
+  ];
+
 }
