@@ -22,6 +22,7 @@
     ./plugins/quarto.nix
     ./plugins/markdown-oxide.nix
     ./plugins/obsidian.nix
+    ./plugins/snacks.nix
     
     ./plugins/mini.nix
     # replace with mini?
