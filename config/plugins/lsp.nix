@@ -40,7 +40,6 @@
     keymaps.lspBuf = {
       "gd" = "definition";
       "gr" = "references";
-      "gt" = "type_definition";
       "gi" = "implementation";
       "ga" = "code_action";
     };

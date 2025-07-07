@@ -20,7 +20,7 @@
 
     # shift in visual mode without exiting visual mode
     { key = "<"      ; action = "<gv"; mode = [ "v" ]; }
-    { key = "<"      ; action = ">gv"; mode = [ "v" ]; }
+    { key = ">"      ; action = ">gv"; mode = [ "v" ]; }
 
     # gf creates new file if none exists
     { key = "gf"     ; action = "<cmd>e <cfile><cr>"; mode = [ "n" ]; }
