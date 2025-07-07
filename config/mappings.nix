@@ -53,6 +53,8 @@
 
     vim.keymap.set('n', '<leader>tw', "<cmd>set nolist!<cr>", { desc = "Show invisibles" })
     vim.keymap.set('n', '<leader>ta', "<cmd>set arabic!<cr>", { desc = "Arabic mode" })
+    vim.keymap.set('n', '<leader>tn', "<cmd>set number!<cr>", { desc = "Toggle numbers" })
+    vim.keymap.set('n', '<leader>tr', "<cmd>set relativenumber!<cr>", { desc = "Toggle relative line numbers" })
     vim.keymap.set('n', '<leader>tc', function () vim.o.cursorline = not vim.o.cursorline end, { desc = "Toggle cursorline" })
 
     vim.keymap.set('n', '<leader>id', '"=strftime("%Y-%m-%d")<CR>p', { desc = "Insert today's date" })
