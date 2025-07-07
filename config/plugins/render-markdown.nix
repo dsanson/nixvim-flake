@@ -14,6 +14,11 @@
       bullet = {
       icons = { '⁃', '•', '⁃', '•' },
       },
+      html = {
+        comment = {
+          conceal = false,
+        },
+      },
     })
   '';
 }
