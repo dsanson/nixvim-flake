@@ -18,7 +18,10 @@
       r_language_server.enable = true;
       r_language_server.package = null;
       yamlls.enable = true;
-      lua_ls.enable = true;
+      lua_ls = {
+        enable = true;
+        settings.diagnostics.globals = [ "vim" ];
+      };
       lemminx.enable = true; # for XML
       nginx_language_server.enable = true;
       marksman.enable = false; # for markdown
