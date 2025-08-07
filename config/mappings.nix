@@ -50,6 +50,13 @@
     vim.keymap.set('n', '<leader>jf', 'gF', { desc = 'Open file in nvim (gF)' })
 
     vim.keymap.set('n', '<leader>wb', "<cmd>.!bib2path2 -b \"<cWORD>\"<CR>", { desc = "replace citekey with bibliographic entry" })
+    -- TODO: functions for inserting images from zotero in different ways
+    --   copy image to local media folder
+    --   insert as markdown with alt text
+    --   insert just as path
+    --   include a yaml nocite key
+
+    vim.keymap.set('n', '<leader>wi', "<cmd>.!bib2path2 -ip \"<cWORD>\"<CR>", { desc = "replace citekey with image path" })
 
     vim.keymap.set('n', '<leader>tw', "<cmd>set nolist!<cr>", { desc = "Show invisibles" })
     vim.keymap.set('n', '<leader>ta', "<cmd>set arabic!<cr>", { desc = "Arabic mode" })
