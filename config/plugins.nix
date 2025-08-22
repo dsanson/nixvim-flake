@@ -50,19 +50,6 @@
 
   ];
 
-  # extraPlugins =  [
-  #   (pkgs.vimUtils.buildVimPlugin {
-  #    name = "apple-music";
-  #    src = pkgs.fetchFromGitHub {
-  #      owner = "p5quared";
-  #      repo = "apple-music.nvim";
-  #      rev = "164f8614f659dd2fb1c95010d951f7178e24c1de";
-  #      hash = "sha256-dXQvT/flGYtyOpzZrcJI2BuXZZiaby2K/t8RDaoop7g=";
-  #    };
-  #    doCheck = false;  
-  #   })
-  # ];
-
   extraPackages = with pkgs; [
     manix # should just install this globally (what uses this? Telescope?)
   ];

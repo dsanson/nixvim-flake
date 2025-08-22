@@ -45,5 +45,22 @@
       mode = ["n"]; 
       options.desc = "Cleanup"; 
     }
+    { key = "<leader>ml";
+      action.__raw = "function() require('apple-music').next_track() end";
+      mode = ["n"]; 
+      options.desc = "Next Track"; 
+    }
+    { key = "<leader>mh";
+      action.__raw = "function() require('apple-music').previous_track() end";
+      mode = ["n"]; 
+      options.desc = "Previous Track"; 
+    }
+    { key = "<leader>mc";
+      action.__raw = "function() require('apple-music').favorite_current_track() end";
+      mode = ["n"]; 
+      options.desc = "Favorite Current Track"; 
+    }
+
   ];
 }
+
