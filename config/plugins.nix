@@ -11,6 +11,7 @@
 
     ./plugins/auto-save.nix
     ./plugins/lastplace.nix
+    ./plugins/auto-session.nix
     ./plugins/oil.nix
     ./plugins/rainbow-delimiters.nix
     ./plugins/otter.nix
@@ -34,6 +35,7 @@
     ./plugins/zen-mode.nix
     ./plugins/twilight.nix
     ./plugins/image.nix
+    ./plugins/diagram.nix
     ./plugins/neogit.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
@@ -41,26 +43,21 @@
 
     ./plugins/vim-speeddating.nix
     ./plugins/utl-vim.nix
-    ./plugins/csv-vim.nix
     ./plugins/boole-nvim.nix
     ./plugins/img-clip-nvim.nix
     ./plugins/neopywal.nix
+    ./plugins/apple-music.nix
 
   ];
 
-  # extraPlugins = with pkgs.vimPlugins; [
-  #   vim-speeddating
-  #   utl-vim
-  #   csv-vim
-  #   boole-nvim
-  #   img-clip-nvim
+  # extraPlugins =  [
   #   (pkgs.vimUtils.buildVimPlugin {
-  #    name = "neopywal";
+  #    name = "apple-music";
   #    src = pkgs.fetchFromGitHub {
-  #      owner = "RedsXDD";
-  #      repo = "neopywal.nvim";
-  #      rev = "09188d79b45694141ec779d05cbcc75f994639d1";
-  #      hash = "sha256-RLwxyGRmU1B8r6xO1YObF8qlNEj7qitNUArUlw092V8=";
+  #      owner = "p5quared";
+  #      repo = "apple-music.nvim";
+  #      rev = "164f8614f659dd2fb1c95010d951f7178e24c1de";
+  #      hash = "sha256-dXQvT/flGYtyOpzZrcJI2BuXZZiaby2K/t8RDaoop7g=";
   #    };
   #    doCheck = false;  
   #   })
