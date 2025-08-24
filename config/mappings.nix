@@ -69,14 +69,8 @@
 
     vim.cmd('hi clear VertSplit') -- clear highlighting on split
 
-
-    vim.keymap.set('n', '<leader>dp', vim.diagnostic.goto_prev, { desc = "Go to previous" })
-    vim.keymap.set('n', '<leader>dn', vim.diagnostic.goto_next, { desc = "Go to next" })
-
     vim.keymap.set('n', '<leader>jz', "<cmd>!open \"$(bib2path2 -z \"<cWORD>\")\"<CR>", { desc = "Open in Zotero" })
     vim.keymap.set('n', '<leader>jp', "<cmd>!open \"$(bib2path2 \"<cWORD>\")\"<CR>", { desc = "Open PDF in Preview.app"})
-    vim.keymap.set('n', '<leader>jx', 'gx', { desc = 'Open file (gx)' })
-    vim.keymap.set('n', '<leader>jf', 'gF', { desc = 'Open file in nvim (gF)' })
 
     vim.keymap.set('n', '<leader>wb', "<cmd>.!bib2path2 -b \"<cWORD>\"<CR>", { desc = "replace citekey with bibliographic entry" })
     -- TODO: functions for inserting images from zotero in different ways
