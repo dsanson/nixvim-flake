@@ -33,6 +33,35 @@
       options.silent = true;
     }
 
+    { 
+      key = "<leader>tw"; 
+      mode = [ "n" ];
+      action = "<cmd>set nolist!<cr>"; 
+      options.desc = "Show invisibles";
+    }
+    { 
+      key = "<leader>ta"; 
+      action = "<cmd>set arabic!<cr>"; 
+      options.desc = "Arabic mode";
+    }
+    { 
+      key = "<leader>tn"; 
+      mode = [ "n" ];
+      action = "<cmd>set number!<cr>"; 
+      options.desc = "Toggle numbers";
+    }
+    { 
+      key = "<leader>tr"; 
+      mode = [ "n" ];
+      action = "<cmd>set relativenumber!<cr>"; 
+      options.desc = "Toggle relative line numbers";
+    }
+    { 
+      key = "<leader>tc";
+      mode = [ "n" ];
+      action.__raw = "function () vim.o.cursorline = not vim.o.cursorline end";
+      options.desc = "Toggle cursorline";
+    }
 
   ];
 
@@ -58,11 +87,11 @@
 
     vim.keymap.set('n', '<leader>wi', "<cmd>.!bib2path2 -ip \"<cWORD>\"<CR>", { desc = "replace citekey with image path" })
 
-    vim.keymap.set('n', '<leader>tw', "<cmd>set nolist!<cr>", { desc = "Show invisibles" })
-    vim.keymap.set('n', '<leader>ta', "<cmd>set arabic!<cr>", { desc = "Arabic mode" })
-    vim.keymap.set('n', '<leader>tn', "<cmd>set number!<cr>", { desc = "Toggle numbers" })
-    vim.keymap.set('n', '<leader>tr', "<cmd>set relativenumber!<cr>", { desc = "Toggle relative line numbers" })
-    vim.keymap.set('n', '<leader>tc', function () vim.o.cursorline = not vim.o.cursorline end, { desc = "Toggle cursorline" })
+    -- vim.keymap.set('n', '<leader>tw', "<cmd>set nolist!<cr>", { desc = "Show invisibles" })
+    -- vim.keymap.set('n', '<leader>ta', "<cmd>set arabic!<cr>", { desc = "Arabic mode" })
+    -- vim.keymap.set('n', '<leader>tn', "<cmd>set number!<cr>", { desc = "Toggle numbers" })
+    -- vim.keymap.set('n', '<leader>tr', "<cmd>set relativenumber!<cr>", { desc = "Toggle relative line numbers" })
+    -- vim.keymap.set('n', '<leader>tc', function () vim.o.cursorline = not vim.o.cursorline end, { desc = "Toggle cursorline" })
 
     vim.keymap.set('n', '<leader>id', '"=strftime("%Y-%m-%d")<CR>p', { desc = "Insert today's date" })
     vim.keymap.set('n', '<leader>it', '"=strftime("%FT%T%Z")<CR>p', { desc = "Insert timestamp" })
