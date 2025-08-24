@@ -7,10 +7,7 @@ opt_local.linebreak = true
 opt_local.smartindent = false
 opt_local.wrap = true
 
--- vim-pandoc
--- vim.g["pandoc#biblio#bibs"] = { "/Users/desanso/Documents/d/research/zotero.bib" }
-
-function add_ms_comment()
+local function add_ms_comment()
   math.randomseed(os.time())
   local _, line_v, col_v = unpack(vim.fn.getpos('v'))
   local _, line_cur, col_cur = unpack(vim.fn.getpos('.'))
