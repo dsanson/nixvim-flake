@@ -47,6 +47,7 @@
     ./plugins/img-clip-nvim.nix
     ./plugins/neopywal.nix
     ./plugins/apple-music.nix
+    ./plugins/vim-scimark.nix
 
   ];
 
