@@ -14,6 +14,13 @@
     })
   ];
 
+  plugins.which-key.settings.spec = [
+    { 
+      __unkeyed = "<leader>m";
+      group = "Music";
+    }
+  ];
+
   keymaps = [
     { key = "<leader>mp";
       action.__raw = "function() require('apple-music').toggle_play() end";
