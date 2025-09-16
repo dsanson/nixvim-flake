@@ -110,12 +110,12 @@
     { key = "<leader>hm";
       action = "<cmd>Telescope man_pages<cr>";
       mode = ["n"]; 
-      options.desc = "man"; 
+      options.desc = "open man page"; 
     }
     { key = "<leader>hh";
       action = "<cmd>Telescope help_tags<cr>";
       mode = ["n"]; 
-      options.desc = "help"; 
+      options.desc = "search help tags"; 
     }
     # insert symbols
     { key = "<leader>is";
