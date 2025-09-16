@@ -11,7 +11,7 @@
   ];
 
   keymaps = [
-    { key = "<leader>]c";
+    { key = "]c";
       action.__raw = ''
         function()
           if vim.wo.diff then
@@ -24,7 +24,7 @@
       mode = ["n"]; 
       options.desc = "Next change"; 
     }
-    { key = "<leader>[c";
+    { key = "[c";
       action.__raw = ''
         function()
           if vim.wo.diff then
