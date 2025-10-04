@@ -7,6 +7,7 @@
     ./abbreviations.nix
     ./digraphs.nix
     ./mappings.nix
+    ./lsp.nix
     ./plugins.nix
   ];
 

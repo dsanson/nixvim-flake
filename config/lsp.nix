@@ -11,7 +11,7 @@
       eslint.enable = true;
       cssls.enable = true;
       hls.enable = true; # for haskell
-      hls.installGhc = true;
+      # hls.installGhc = true;
       html.enable = true;
       jsonls.enable = true;
       pyright.enable = true; # for python
@@ -25,12 +25,15 @@
       lemminx.enable = true; # for XML
       nginx_language_server.enable = true;
       marksman.enable = false; # for markdown
+      markdown_oxide.enable = true;
       typst_lsp.enable = false;
       tinymist.enable = true; # for typst
       texlab.enable = true; # for latex
       ltex = {
         enable = true;
-        filetypes = [ "markdown" "tex" "plaintext" "rst" ];
+        settings = {
+          filetypes = [ "markdown" "tex" "plaintext" "rst" ];
+        };
         settings = {
           language = "en-US";
           disabledRules = {

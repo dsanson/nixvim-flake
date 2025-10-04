@@ -5,7 +5,7 @@
     ./plugins/treesitter.nix
     ./plugins/treesitter-context.nix
     ./plugins/cmp.nix
-    ./plugins/lsp.nix
+    #./plugins/lsp.nix
     ./plugins/which-key.nix
     ./plugins/trouble.nix
 
@@ -21,7 +21,6 @@
     ./plugins/pandoc.nix
     ./plugins/render-markdown.nix
     ./plugins/quarto.nix
-    ./plugins/markdown-oxide.nix
     ./plugins/obsidian.nix
     ./plugins/snacks.nix
     
