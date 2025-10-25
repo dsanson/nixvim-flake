@@ -1,18 +1,20 @@
 {
   plugins.neo-tree = {
     enable = true;
-    closeIfLastWindow = true;
-    useDefaultMappings = true;
-    window = {
-      width = 30;
-      position = "left";
+    settings = {
+      closeIfLastWindow = true;
+      useDefaultMappings = true;
+      window = {
+        width = 30;
+        position = "left";
+      };
+      sources = [
+        "filesystem"
+        "buffers"
+        "git_status"
+        "document_symbols"
+      ];
     };
-    sources = [
-      "filesystem"
-      "buffers"
-      "git_status"
-      "document_symbols"
-    ];
   };
   
   keymaps = [

@@ -20,7 +20,9 @@
       yamlls.enable = true;
       lua_ls = {
         enable = true;
-        settings.diagnostics.globals = [ "vim" ];
+        config = {
+          diagnostics.globals = [ "vim" ];
+        };
       };
       lemminx.enable = true; # for XML
       nginx_language_server.enable = true;
@@ -31,10 +33,8 @@
       texlab.enable = true; # for latex
       ltex = {
         enable = true;
-        settings = {
+        config = {
           filetypes = [ "markdown" "tex" "plaintext" "rst" ];
-        };
-        settings = {
           language = "en-US";
           disabledRules = {
            "en-US" = [ "MORFOLOGIK_RULE_EN_US" "WHITESPACE_RULE" ];
