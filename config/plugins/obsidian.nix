@@ -17,7 +17,7 @@
       attachments = {
         confirm_img_paste = true;
         img_folder = "attachments";
-        img_text_func = ''
+        img_text_func.__raw = ''
           function(client, path)
             ---@type string
             local link_path
@@ -27,7 +27,7 @@
           end
         '';
       };
-      note_id_func = ''
+      note_id_func.__raw = ''
         function(title)
           -- Just use title as note ID
           -- A note with the title 'My new note' will be given the ID 'My new note',
