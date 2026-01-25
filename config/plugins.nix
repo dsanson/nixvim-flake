@@ -26,9 +26,7 @@
     
     ./plugins/mini.nix
     # replace with mini?
-    ./plugins/surround.nix
     ./plugins/easy-align.nix
-    ./plugins/commentary.nix
 
     # replace with snacks?
     ./plugins/zen-mode.nix

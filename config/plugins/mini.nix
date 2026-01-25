@@ -4,7 +4,7 @@
     modules = {
       icons = {};
       # comment = {};
-      # surround = {};
+      surround = {};
     };
     mockDevIcons = true;
   };
