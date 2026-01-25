@@ -16,7 +16,7 @@
       };
       attachments = {
         confirm_img_paste = true;
-        img_folder = "attachments";
+        folder = "attachments";
         img_text_func.__raw = ''
           function(client, path)
             ---@type string

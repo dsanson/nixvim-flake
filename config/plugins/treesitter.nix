@@ -15,7 +15,9 @@
 {
   plugins.treesitter = {
     enable = true;
-    folding = true;
+    #folding = true;
+    folding.enable = true;
+    #highlight.enable = true;
     # grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars ++ [
     #   pandoc-markdown
     # ];
