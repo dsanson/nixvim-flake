@@ -1,6 +1,6 @@
 {
   plugins.nvim-surround = {
-    enable = true;
+    enable = false;
   };
 }
 
