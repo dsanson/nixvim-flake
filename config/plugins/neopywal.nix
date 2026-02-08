@@ -16,5 +16,4 @@
   opts.background = "dark"; # neopywal manages light and dark on its own
   colorscheme = "neopywal";
 
-
 }

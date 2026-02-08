@@ -33,8 +33,9 @@
 
     # status line and messages
     ruler = true;      # Hide the ruler
-    statusline = "%m%r%t %y [%c,%l,%P]"; #Status line
-    laststatus = 0; #Hide status line
+    #statusline = "%m%r%t %y [%c,%l,%P]"; #Status line
+    statusline = "%<%f\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P";
+    laststatus = 3; #Hide status line
     shortmess = "atOI";    # avoid being spammed by messages
     showcmd = true;      # Show partial commands in status line and Selected characters/lines in visual mode
     showmode = true;      # Show current mode in command-line
@@ -56,6 +57,7 @@
     scrolloff     = 3;    # Minumum lines to keep above and below cursor
 
     spell = true;
+
   };
 
 }
