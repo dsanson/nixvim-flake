@@ -83,7 +83,7 @@
   plugins.lspconfig.enable = true;
 
   plugins.ltex-extra = {
-    enable = true;
+    enable = false;
     settings = {
       initCheck = true;
       loadLangs = [
