@@ -4,10 +4,10 @@
     (pkgs.vimUtils.buildVimPlugin {
      name = "neopywal";
      src = pkgs.fetchFromGitHub {
-       owner = "RedsXDD";
+       owner = "dsanson";
        repo = "neopywal.nvim";
-       rev = "09188d79b45694141ec779d05cbcc75f994639d1";
-       hash = "sha256-RLwxyGRmU1B8r6xO1YObF8qlNEj7qitNUArUlw092V8=";
+       rev = "d394d113d1448e0c1310995bb43e3bf26acd82d3";
+       hash = "sha256-8vA1lliDXy/GeEUTv6O4BcVXDsV7SBeVySkkAHcO3iA=";
      };
      doCheck = false;  
     })
