@@ -1,6 +1,6 @@
 {
   plugins.neo-tree = {
-    enable = true;
+    enable = false;
     settings = {
       closeIfLastWindow = true;
       useDefaultMappings = true;
@@ -17,21 +17,21 @@
     };
   };
   
-  keymaps = [
-    { key = "<leader>tt";
-      action = "<cmd>Neotree document_symbols toggle<cr>";
-      mode = ["n"]; 
-      options.desc = "Table of Contents"; 
-    }
-    { key = "<leader>tf";
-      action = "<cmd>Neotree filesystem toggle<cr>";
-      mode = ["n"]; 
-      options.desc = "Files panel"; 
-    }
-    { key = "<leader>tb";
-      action = "<cmd>Neotree buffers toggle<cr>";
-      mode = ["n"]; 
-      options.desc = "Buffers panel"; 
-    }
-  ];
+  # keymaps = [
+  #   { key = "<leader>tt";
+  #     action = "<cmd>Neotree document_symbols toggle<cr>";
+  #     mode = ["n"]; 
+  #     options.desc = "Table of Contents"; 
+  #   }
+  #   { key = "<leader>tf";
+  #     action = "<cmd>Neotree filesystem toggle<cr>";
+  #     mode = ["n"]; 
+  #     options.desc = "Files panel"; 
+  #   }
+  #   { key = "<leader>tb";
+  #     action = "<cmd>Neotree buffers toggle<cr>";
+  #     mode = ["n"]; 
+  #     options.desc = "Buffers panel"; 
+  #   }
+  # ];
 }

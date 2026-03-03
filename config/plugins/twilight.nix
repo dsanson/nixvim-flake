@@ -1,6 +1,6 @@
 {
   plugins.twilight = {
-    enable = true;
+    enable = false;
   };
   keymaps = [
     { key = "<leader>td";

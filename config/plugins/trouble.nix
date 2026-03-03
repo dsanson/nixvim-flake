@@ -2,6 +2,30 @@
   plugins.trouble = {
     enable = true;
   };
+
+  keymaps = [
+    { key = "<leader>tt";
+      action = "<cmd>Trouble symbols toggle win.position=right<cr>";
+      mode = ["n"]; 
+      options.desc = "Table of Contents"; 
+    }
+    { key = "<leader>td";
+      action = "<cmd>Trouble diagnostics toggle win.position=right focus=false<cr>";
+      mode = ["n"]; 
+      options.desc = "Diagnostics panel"; 
+    }
+    { key = "<leader>tl";
+      action = "<cmd>Trouble lsp toggle win.position=right focus=false<cr>";
+      mode = ["n"]; 
+      options.desc = "LSP panel"; 
+    }
+    { key = "<leader>tq";
+      action = "<cmd>Trouble quickfix toggle win.position=right focus=false<cr>";
+      mode = ["n"]; 
+      options.desc = "Quickfix panel"; 
+    }
+  ];
+
 }
 
 # {

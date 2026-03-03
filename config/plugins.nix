@@ -5,7 +5,6 @@
     ./plugins/treesitter.nix
     ./plugins/treesitter-context.nix
     ./plugins/cmp.nix
-    #./plugins/lsp.nix
     ./plugins/which-key.nix
     ./plugins/trouble.nix
 
@@ -16,7 +15,6 @@
     ./plugins/rainbow-delimiters.nix
     ./plugins/otter.nix
     ./plugins/todo-comments.nix
-    ./plugins/neo-tree.nix
     ./plugins/csv.nix
     ./plugins/pandoc.nix
     ./plugins/render-markdown.nix
@@ -30,8 +28,6 @@
 
     # replace with snacks?
     ./plugins/zen-mode.nix
-    ./plugins/twilight.nix
-    ./plugins/image.nix
     ./plugins/diagram.nix
     ./plugins/neogit.nix
     ./plugins/git-conflict.nix
@@ -55,13 +51,6 @@
 }
 
 # Not available as nixvim plugins and haven't bothered to install manually yet
-#   'opdavies/toggle-checkbox.nvim',
-#   { 
-#     'justinmk/vim-gtfo', -- :open directory for current file in finder (gof) or terminal (got)
-#     config = function()
-#       vim.g["gtfo#terminals"] = { mac = "/Users/desanso/Applications/Kitty.app"}
-#     end,
-#   },
 #   {
 #     'cameron-wags/rainbow_csv.nvim',
 #     config = true,
