@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   lsp = {
@@ -41,6 +41,26 @@
           };
         };
       };
+      panache = {
+      config = {
+        cmd = [
+          "panache"
+          "lsp"
+        ];
+        filetypes = [
+          "markdown"
+          "pandoc"
+          "quarto"
+          "rmarkdown"
+        ];
+        root_markers = [
+          ".panache.toml"
+          "panache.toml"
+          ".git"
+        ];
+      };
+      enable = true;
+    };
     };
 
     keymaps = [

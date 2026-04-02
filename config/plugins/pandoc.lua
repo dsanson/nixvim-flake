@@ -1,7 +1,7 @@
 local opt_local = vim.opt_local
 
-opt_local.equalprg = 'pandoc -f markdown+wikilinks_title_after_pipe -t markdown+wikilinks_title_after_pipe  --columns 78 --markdown-headings=atx --reference-location block --standalone'
-opt_local.formatprg = 'semantic_linebreaks'
+--opt_local.equalprg = 'pandoc -f markdown+wikilinks_title_after_pipe -t markdown+wikilinks_title_after_pipe  --columns 78 --markdown-headings=atx --reference-location block --standalone'
+--opt_local.formatprg = 'semantic_linebreaks'
 opt_local.joinspaces = false
 opt_local.linebreak = true
 opt_local.smartindent = false

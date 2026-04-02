@@ -12,7 +12,7 @@
   ];
 
   extraPackages = with pkgs; [
-    manix # should just install this globally
+    panache
   ];
 
   performance.byteCompileLua.enable = true;
