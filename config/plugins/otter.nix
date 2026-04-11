@@ -1,6 +1,6 @@
 {
   plugins.otter = {
-    enable = true;
+    enable = false;
   };
 }
 

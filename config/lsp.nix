@@ -28,13 +28,13 @@
       nginx_language_server.enable = true;
       marksman.enable = false; # for markdown
       markdown_oxide.enable = true;
-      typst_lsp.enable = false;
+      typst_lsp.enable = true;
       tinymist.enable = true; # for typst
       texlab.enable = true; # for latex
       ltex = {
         enable = true;
         config = {
-          filetypes = [ "markdown" "tex" "plaintext" "rst" ];
+          filetypes = [ "markdown" "tex" ];
           language = "en-US";
           disabledRules = {
            "en-US" = [ "MORFOLOGIK_RULE_EN_US" "WHITESPACE_RULE" ];
@@ -42,25 +42,24 @@
         };
       };
       panache = {
-      config = {
-        cmd = [
-          "panache"
-          "lsp"
-        ];
-        filetypes = [
-          "markdown"
-          "pandoc"
-          "quarto"
-          "rmarkdown"
-        ];
-        root_markers = [
-          ".panache.toml"
-          "panache.toml"
-          ".git"
-        ];
+        enable = true;
+        config = {
+          cmd = [
+            "panache"
+            "lsp"
+          ];
+          filetypes = [
+            "markdown"
+            "pandoc"
+            "quarto"
+          ];
+          root_markers = [
+            ".panache.toml"
+            "panache.toml"
+            ".git"
+          ];
+        };
       };
-      enable = true;
-    };
     };
 
     keymaps = [

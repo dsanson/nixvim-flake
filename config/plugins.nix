@@ -13,11 +13,11 @@
     ./plugins/auto-session.nix
     ./plugins/oil.nix
     ./plugins/rainbow-delimiters.nix
-    ./plugins/otter.nix
+    # ./plugins/otter.nix
     ./plugins/todo-comments.nix
     ./plugins/csv.nix
     ./plugins/pandoc.nix
-    ./plugins/render-markdown.nix
+    #./plugins/render-markdown.nix
     ./plugins/quarto.nix
     ./plugins/obsidian.nix
     ./plugins/snacks.nix
@@ -50,23 +50,3 @@
 
 }
 
-# Not available as nixvim plugins and haven't bothered to install manually yet
-#   {
-#     'cameron-wags/rainbow_csv.nvim',
-#     config = true,
-#     ft = {
-#         'csv',
-#         'tsv',
-#         'csv_semicolon',
-#         'csv_whitespace',
-#         'csv_pipe',
-#         'rfc_csv',
-#         'rfc_semicolon'
-#     },
-#     cmd = {
-#         'RainbowDelim',
-#         'RainbowDelimSimple',
-#         'RainbowDelimQuoted',
-#         'RainbowMultiDelim'
-#     }
-#   },
