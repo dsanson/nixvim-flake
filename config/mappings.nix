@@ -62,15 +62,23 @@
       action.__raw = "function () vim.o.cursorline = not vim.o.cursorline end";
       options.desc = "Toggle cursorline";
     }
-
+    { 
+      key = "<leader>jz";
+      mode = [ "n" ];
+      action = "<cmd>!open \"$(bib2path2 -z \"<cWORD>\")\"<CR>";
+      options.desc = "Open in Zotero";
+    } 
+    { 
+      key = "<leader>jp";
+      mode = [ "n" ];
+      action = "<cmd>!open \"$(bib2path2 \"<cWORD>\")\"<CR>";
+      options.desc = "Open linked PDF";
+    } 
   ];
 
   extraConfigLua = ''
 
     vim.cmd('hi clear VertSplit') -- clear highlighting on split
-
-    vim.keymap.set('n', '<leader>jz', "<cmd>!open \"$(bib2path2 -z \"<cWORD>\")\"<CR>", { desc = "Open in Zotero" })
-    vim.keymap.set('n', '<leader>jp', "<cmd>!open \"$(bib2path2 \"<cWORD>\")\"<CR>", { desc = "Open PDF in Preview.app"})
 
     vim.keymap.set('n', '<leader>wb', "<cmd>.!bib2path2 -b \"<cWORD>\"<CR>", { desc = "replace citekey with bibliographic entry" })
     -- TODO: functions for inserting images from zotero in different ways
