@@ -43,12 +43,3 @@ end
 
 vim.keymap.set("v", "<leader>iw", function() add_ms_comment() end, {desc = "add Word comment"})
 
--- refresh codelens on TextChanged and InsertLeave as well
-vim.api.nvim_create_autocmd({ 'TextChanged', 'InsertLeave', 'CursorHold', 'LspAttach' }, {
-    buffer = bufnr,
-    callback = vim.lsp.codelens.refresh,
-})
-
--- trigger codelens refresh
-vim.api.nvim_exec_autocmds('User', { pattern = 'LspAttached' })
-
