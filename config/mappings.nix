@@ -25,6 +25,9 @@
     # gf creates new file if none exists
     { key = "gf"     ; action = "<cmd>e <cfile><cr>"; mode = [ "n" ]; }
 
+    # g. opens directory of current file
+    { key = "g."     ; action = "<cmd>e %:p:h<cr>"; mode = [ "n" ]; }
+
     # ESC removes highlights from search terms
     { 
       key = "<Esc>";

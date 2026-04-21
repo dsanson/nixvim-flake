@@ -28,7 +28,6 @@
 
     # replace with snacks?
     ./plugins/zen-mode.nix
-    ./plugins/diagram.nix
     ./plugins/neogit.nix
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
