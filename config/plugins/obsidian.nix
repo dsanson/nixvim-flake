@@ -18,12 +18,10 @@
         confirm_img_paste = true;
         folder = "attachments";
         img_text_func.__raw = ''
-          function(client, path)
-            ---@type string
-            local link_path
-            link_path = tostring(path)
-            local display_name = vim.fs.basename(link_path)
-            return string.format("![%s](%s)", display_name, link_path)
+          function(path)
+                local name = vim.fs.basename(tostring(path))
+                local encoded_name = require("obsidian.util").urlencode(name)
+                return string.format("![%s](%s)", name, encoded_name)
           end
         '';
       };
