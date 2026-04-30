@@ -51,6 +51,8 @@
     backupcopy = "yes"; # Backup preserves file attributes
     undofile = true;    # Build-in persistent undo
 
+    sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
+
     scrolljump    = 5;  # Line to scroll when cursor leaves screen
     scrolloff     = 3;  # Minimum lines to keep above and below cursor
 

@@ -5,6 +5,7 @@
     ./plugins/treesitter.nix
     ./plugins/treesitter-context.nix
     ./plugins/cmp.nix
+    #./plugins/blink.nix #replace cmp.nix with blink eventually
     ./plugins/which-key.nix
     ./plugins/trouble.nix
 
@@ -21,7 +22,7 @@
     ./plugins/quarto.nix
     ./plugins/obsidian.nix
     ./plugins/snacks.nix
-    
+
     ./plugins/mini.nix
     # replace with mini?
     ./plugins/easy-align.nix
@@ -32,10 +33,9 @@
     ./plugins/git-conflict.nix
     ./plugins/gitsigns.nix
     ./plugins/telescope.nix
-
-    ./plugins/vim-speeddating.nix
+    
     ./plugins/utl-vim.nix
-    ./plugins/boole-nvim.nix
+    ./plugins/dial.nix
     ./plugins/img-clip-nvim.nix
     ./plugins/neopywal.nix
     ./plugins/apple-music.nix
