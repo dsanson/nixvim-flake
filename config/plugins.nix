@@ -41,6 +41,8 @@
     ./plugins/apple-music.nix
     ./plugins/vim-scimark.nix
 
+    ./plugins/haunt.nix
+
   ];
 
   extraPackages = with pkgs; [
