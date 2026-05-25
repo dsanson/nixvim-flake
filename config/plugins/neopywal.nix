@@ -6,8 +6,8 @@
      src = pkgs.fetchFromGitHub {
        owner = "dsanson";
        repo = "neopywal.nvim";
-       rev = "d394d113d1448e0c1310995bb43e3bf26acd82d3";
-       hash = "sha256-8vA1lliDXy/GeEUTv6O4BcVXDsV7SBeVySkkAHcO3iA=";
+       rev = "95425eea6411eebc17c2fcdc46d1c45e57d99205";
+       hash = "sha256-Ytkt4WngDA7zlTUomr/BcyW+B6uULWE9OHm5aQE+mOM=";
      };
      doCheck = false;  
     })

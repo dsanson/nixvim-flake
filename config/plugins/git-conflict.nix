@@ -1,5 +1,5 @@
 {
   plugins.git-conflict = {
-    enable = true;
+    enable = false;
   };
 }

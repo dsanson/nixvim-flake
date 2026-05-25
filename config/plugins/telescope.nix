@@ -18,7 +18,6 @@
     };
 
     enabledExtensions = [
-      "heading"
       "manix"
       "project"
       "zoxide"
@@ -30,19 +29,7 @@
     telescope-project-nvim
     telescope-manix
     telescope-zoxide
-  ]
-
-  ++
-
-  [(pkgs.vimUtils.buildVimPlugin {
-      name = "telescope-heading";
-      src = pkgs.fetchFromGitHub {
-          owner = "crispgm";
-          repo = "telescope-heading.nvim";
-          rev = "e85c0f69cb64048f56e76548dcb2f10277576df9";
-          hash = "sha256-29nSqK4sWI3m5hHviGBfiSN/GPh8oXGiYrrTmN2okRk=";
-      };
-  })];
+  ];
 
   dependencies = {
     epub-thumbnailer.enable = true;
@@ -85,11 +72,6 @@
       action = "<cmd>Telescope buffers theme=dropdown<cr>";
       mode = ["n"]; 
       options.desc = "Buffers"; 
-    }
-    { key = "<leader>jh";
-      action = "<cmd>Telescope heading<cr>";
-      mode = ["n"]; 
-      options.desc = "to heading"; 
     }
     { key = "<leader>jm";
       action = "<cmd>Telescope marks<cr>";

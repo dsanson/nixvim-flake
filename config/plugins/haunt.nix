@@ -6,8 +6,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "TheNoeTrevino";
         repo = "haunt.nvim";
-        rev = "815141d7367c9d895e902db27e2d25d4652ad0fc";
-        hash = "sha256-2miX/k+ZdjThtwoY63mcKKXHSwjH624N7acJtiZuPjw=";
+        rev = "113c2f0689fc8c203f7f316da992e44b074a71ea";
+        hash = "sha256-ldw/5iekHDjyLr3eWP4MR2xBOZz/sDdLMJIVZgIcm4Y=";
       };
       doCheck = false;
     })

@@ -34,7 +34,7 @@
     ./plugins/gitsigns.nix
     ./plugins/telescope.nix
     
-    ./plugins/utl-vim.nix
+    #./plugins/utl-vim.nix
     ./plugins/dial.nix
     ./plugins/img-clip-nvim.nix
     ./plugins/neopywal.nix
