@@ -5,7 +5,7 @@
     autoEnableSources = true;
     settings.sources = [
       { name = "nvim_lsp"; 
-        option.markdown_oxide.keyword_pattern = "[[\(\k\| \|\/\|#\)\+]]";
+        option.markdown_oxide.keyword_pattern = "[[(k| |/|#)+]]";
       }
       # { name = "nvim_lsp_document_symbol"; }
       { name = "nvim_lua"; }
