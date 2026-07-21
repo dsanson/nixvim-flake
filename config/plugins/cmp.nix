@@ -94,7 +94,7 @@
      require('cmp_pandoc').setup({
        filetypes = { "pandoc", "markdown", "rmd" },
        bibliography = {
-         path = '/Users/desanso/Documents/d/research/zotero.json',
+         path = '/Users/david/Documents/d/research/zotero.json',
          documentation = true,
          fields = { "type", "title", "author", "year" },
        },
