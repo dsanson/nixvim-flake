@@ -399,7 +399,5 @@
     iab <buffer> tasawwur taṣawwur
     iab <buffer> Qustas Qusṭās
     iab <buffer> Sharh Sharḥ
-  '' ;
+  '';
 }
-
-
