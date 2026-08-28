@@ -5,6 +5,7 @@
       bigfile.enable = true;
       image = {
         enable = true;
+        math.enabled = false;
         resolve.__raw = ''
           function(path, src)
             local api = require "obsidian.api"
