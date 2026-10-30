@@ -15,6 +15,11 @@
         workdays_only = false;
       };
 
+      checkbox = {
+        enabled = true;
+        create_new = false;
+        order = [ " "  "x" ];
+      };
 
       ui.checkboxes = {
         " ".char = "☐";
