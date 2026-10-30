@@ -14,6 +14,13 @@
         folder = "daily";
         workdays_only = false;
       };
+
+
+      ui.checkboxes = {
+        " ".char = "☐";
+        "x".char = "✔";
+      };
+
       attachments = {
         confirm_img_paste = true;
         folder = "attachments";
