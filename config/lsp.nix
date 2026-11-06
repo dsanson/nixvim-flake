@@ -33,6 +33,7 @@
       texlab.enable = true; # for latex
       ltex = {
         enable = true;
+        package = pkgs.ltex-ls-plus;
         config = {
           filetypes = [ "markdown" "tex" ];
           language = "en-US";
